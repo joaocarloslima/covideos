@@ -1,0 +1,58 @@
+.card-serie{
+  background-color: var(--background-item-color);
+  color: #ffffff;
+  max-width: 200px;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  margin: 15px;
+}
+
+.poster-image{
+  background-image: url('https://image.tmdb.org/t/p/w200/3PTSJkYECKe2nSirjwiogtqVvgm.jpg');
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0 0;
+  padding: 150px 100px;
+}
+
+.fav-btn{
+  position: absolute;
+  left: 10px;
+  padding: 10px;
+}
+
+.card-detail{
+  text-align: left;
+  padding: 15px;
+}
+
+.card-detail span{
+  color: var(--destak-color);
+}
+
+.card-detail h2{
+  font-size: .8em;
+  opacity: .7;
+  font-weight: lighter;
+}
+
+.card-detail h1,h2{
+  margin: 0;
+}
+
+.btn-detail{
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn-detail:hover{
+  opacity: .7;
+}
+
+

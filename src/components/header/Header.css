@@ -1,0 +1,29 @@
+
+.Header{
+    background-color:var(--background-item-color);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  
+  .Logo{
+    background: var(--destak-color);
+    border-radius: 47px;
+    font-family: Anton, sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.165em;
+    padding: 10px 30px;
+  }
+  
+  .Header input{
+    border-radius: 10px;
+    border: 0;
+    width: 400px;
+    margin: 0 10px;
+    font-family: Roboto;
+    font-size: 20px;
+    
+  }
+  
