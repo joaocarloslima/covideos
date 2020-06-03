@@ -5,7 +5,6 @@ import './CardSerie.css'
 export default function CadSerie() {
   return (
     <div className="card-serie">
-      <span className="material-icons fav-btn">add_circle_outline</span>
       <div className="poster-image"></div>
       <div className="card-detail">
         <span className="material-icons">star</span>
