@@ -3,5 +3,7 @@
 }
 
 .description{
-    color: #FFF
+    color: #FFF;
+    max-width: 50vh;
+    margin-left: 50px;
 }

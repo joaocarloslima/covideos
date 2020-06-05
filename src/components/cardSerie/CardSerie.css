@@ -1,4 +1,6 @@
 .CardSerie{
+  display: flex;
+  flex-direction: column;
   background-color: var(--back-color);
   max-width: 200px ;
   border-radius: 10px;
@@ -14,7 +16,11 @@
   background-repeat: no-repeat;
 }
 
-CardSerie .score {
+.CardSerie .detail{
+  flex: 1;
+}
+
+.CardSerie .score {
   display: flex;
   align-items: center;
 }

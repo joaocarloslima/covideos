@@ -11,7 +11,7 @@ export default function Sobre() {
                 <Tab text="Sobre" target="sobre" />
             </div>
             <div className="content">
-                <h1 className="title">Sobre</h1>
+                <h1 className="title">Seu App de Séries</h1>
                 <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere beatae et perferendis dolore, vitae deserunt harum sapiente incidunt aliquid ducimus placeat reiciendis voluptatibus, in dignissimos laborum pariatur, consequuntur nihil aliquam?</p>
             </div>
         </Fragment>
