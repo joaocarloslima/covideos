@@ -12,7 +12,7 @@
 
 .TabLink.active{
     box-shadow: 0 22px 0 -20px var(--destak-color);
-    opacity: 1;
+    opacity: 100%;
     color: var(--destak-color);
 }
 
