@@ -1,18 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-.App {
+
+.App{
   background-color: #000000;
   min-height: 100vh;
-  text-align: center;
-
-  --background-item-color: #2c2c2c;
   --destak-color: #F5C53B;
-  --primary-color: #5899EB;
+  --back-color: #2c2c2c;
+  --primary-color: #5899EB; 
 }
 
-.content{
+.tabs{
   display: flex;
+  width: 100%;
 }
 
+ .content{
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 50px;
+ }
+
+ a{
+  text-decoration: none;
+  display: flex;
+  margin: 20px;
+  padding: 5px;
+}

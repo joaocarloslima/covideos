@@ -1,6 +1,6 @@
 
 .Header{
-    background-color:var(--background-item-color);
+    background-color:var(--back-color);
     display: flex;
     padding: 10px;
     justify-content: space-between;

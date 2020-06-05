@@ -4,18 +4,24 @@ import './CardSerie.css'
 
 export default function CadSerie() {
   return (
-    <div className="card-serie">
-      <div className="poster-image"></div>
-      <div className="card-detail">
-        <span className="material-icons">star</span>
-          9,5
-          <h1>Lost</h1>
-        <h2>01/01/2020</h2>
+    <div className="CardSerie">
+      <span className="material-icons FavButton">add_circle_outline</span>
+      <div
+        className="img-header"
+        >
       </div>
+
+      <div className="score">
+        <span className="material-icons">grade</span>
+        9.8
+      </div>
+      <h2>Lost</h2>
+      <h3>02/01/2006</h3>
+
       <a href="#" className="btn-detail">
-        <span className="material-icons">play_circle_filled</span>
-        detalhes
-      </a>
+        <span className="material-icons">add_circle</span>
+                detalhes
+            </a>
     </div>
   );
 }
