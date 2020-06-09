@@ -12,7 +12,7 @@ export default function Sobre() {
             </div>
             <div className="content">
                 <h1 className="title">Seu App de Séries</h1>
-                <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere beatae et perferendis dolore, vitae deserunt harum sapiente incidunt aliquid ducimus placeat reiciendis voluptatibus, in dignissimos laborum pariatur, consequuntur nihil aliquam?</p>
+                <p className="description">Covideos permite que você busque suas séries preferidas e marque como favorita. Além disso você pode ver os últimos lançamentos e as séries com melhores avaliações.</p>
             </div>
         </Fragment>
     );
