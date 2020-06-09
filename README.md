@@ -2,6 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <p align="center">
 <img src="https://img.shields.io/github/license/joaocarloslima/covideos" alt="License Shield">
+<img src="https://img.shields.io/github/last-commit/joaocarloslima/covideos/master" alt="Last Commit Shield">
 </p>
 
 
