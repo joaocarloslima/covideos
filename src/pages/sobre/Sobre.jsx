@@ -8,6 +8,7 @@ export default function Sobre() {
         <Fragment>
             <div className="tabs">
                 <Tab text="Lançamentos" target="lancamentos" />
+                <Tab text="Busca" target="busca" />
                 <Tab text="Sobre" target="sobre" />
             </div>
             <div className="content">

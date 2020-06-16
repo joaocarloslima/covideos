@@ -17,13 +17,25 @@
     padding: 10px 30px;
   }
   
-  .Header input{
+  .Header form input{
     border-radius: 10px;
     border: 0;
     width: 400px;
+    height: 2rem;
     margin: 0 10px;
     font-family: Roboto;
     font-size: 20px;
-    
+  }
+
+  .Header form button{
+    background-color: var(--destak-color);
+    border: none;
+    border-radius: 10px;
+    height: 2rem;
+    width: 100px;
+    font-family: Anton, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    cursor: pointer;
   }
   
