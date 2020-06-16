@@ -11,7 +11,7 @@ export default function Busca(props) {
                     props.location.search +
                     "&api_key=1e922667481ab207d642450b0efb461e&language=pt-BR"
 
-    useEffect(() => { load() }, [] )
+    useEffect(() => { load() }, [props.location.search] )
 
     async function load(){
         try{
