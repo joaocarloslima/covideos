@@ -7,14 +7,15 @@ function Header(props){
 
     const [search, setSearch] = useState("");
 
-    function buscar(){
-        props.history.
+    function buscar(e){
+        e.preventDeafault()
+        props.history.push("/busca")
     }
 
     return(
         <div className="Header">
             <div className="Logo">COVIDEOS</div>
-            <form onSubmit="buscar">
+            <form onSubmit={buscar}>
                 <input 
                     type="text" 
                     name="query" 
