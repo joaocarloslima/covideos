@@ -4,7 +4,7 @@ import api, { api_options } from '../../services/api'
 import CardSerie from "../../components/cardSerie/CardSerie"
 import Menu from '../../components/menu/Menu';
 
-export default function Lancamentos() {
+export default function Populares() {
 
     const [series, setSeries] = useState([])
 
@@ -12,7 +12,7 @@ export default function Lancamentos() {
 
     async function load(){
         try{
-            const resposta = await api.get("/tv/airing_today", api_options())
+            const resposta = await api.get("/tv/popular", api_options())
             setSeries(resposta.data.results)
             console.log(resposta.data.results)
         }catch(erro){

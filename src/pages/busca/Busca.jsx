@@ -1,21 +1,19 @@
 import React, { Fragment, useEffect, useState } from 'react'
-import axios from 'axios'
+import api, {api_options} from '../../services/api'
 
 import CardSerie from "../../components/cardSerie/CardSerie"
-import Tab from '../../components/tab/Tab';
+import Menu from '../../components/menu/Menu';
 
 export default function Busca(props) {
 
     const [series, setSeries] = useState([])
-    const urlAPI = "https://api.themoviedb.org/3/search/tv" +
-                    props.location.search +
-                    "&api_key=1e922667481ab207d642450b0efb461e&language=pt-BR"
+    const urlAPI = "/search/tv" + props.location.search
 
     useEffect(() => { load() }, [props.location.search] )
 
     async function load(){
         try{
-            const resposta = await axios.get(urlAPI)
+            const resposta = await api.get(urlAPI, api_options())
             setSeries(resposta.data.results)
             console.log(props.location)
         }catch(erro){
@@ -25,11 +23,7 @@ export default function Busca(props) {
 
     return (
         <Fragment>
-            <div className="tabs">
-                <Tab text="Lançamentos" target="lancamentos" />
-                <Tab text="Busca" target="busca" />
-                <Tab text="Sobre" target="sobre" />
-            </div>
+            <Menu />
             <div className="content">
                 {series.map( (serie) => <CardSerie key={serie.id} serie={serie} />)}
             </div>
