@@ -7,6 +7,7 @@ import Lancamentos from './pages/lancamentos/Lancamentos';
 import Populares from './pages/Populares/Populares';
 import Sobre from './pages/sobre/Sobre';
 import Busca from './pages/busca/Busca';
+import Serie from './pages/serie/Serie';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/lancamentos" component={Lancamentos} />
             <Route path="/populares" component={Populares} />
             <Route path="/sobre" component={Sobre} />
+            <Route path="/serie/:serieId" component={Serie} />
             <Route path="/busca" component={Busca} />
           </Switch>
         </BrowserRouter>
