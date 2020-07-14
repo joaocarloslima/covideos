@@ -1,0 +1,24 @@
+.card-temporada{
+    display: flex;
+    width: 80%;
+    border-bottom: 1px solid #646464;
+    padding: 1rem 0;
+}
+
+.card-temporada img{
+    max-width: 100px;
+    max-height: 150px;
+}
+
+.temporada-info{
+    margin-left: 2rem;
+    color: #646464;
+}
+
+.temporada-info h3{
+    color: var(--primary-color);
+}
+
+.temporada-info .qtde-eps{
+    font-weight: bold;
+}

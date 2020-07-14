@@ -1,12 +1,14 @@
 import React, { Fragment, useEffect, useState } from "react";
 import api, { api_options } from "../../services/api";
 
+import CardTemporada from "../../components/cardTemporada/CardTemporada";
 import "./Serie.css";
 
 export default function Populares(props) {
-  const { serieId } = props.match.params
+  const { serieId } = props.match.params;
   const [serie, setSerie] = useState([]);
   const [genres, setGenres] = useState([]);
+  const [temporadas, setTemporadas] = useState([]);
   const imgBaseUrl = "https://image.tmdb.org/t/p/w300/";
   const imgBgBaseUrl = "https://image.tmdb.org/t/p/original/";
 
@@ -19,6 +21,7 @@ export default function Populares(props) {
       const resposta = await api.get(`/tv/${serieId}`, api_options());
       setSerie(resposta.data);
       setGenres(resposta.data.genres);
+      setTemporadas(resposta.data.seasons);
       console.log(resposta.data);
     } catch (erro) {
       console.log(erro);
@@ -33,8 +36,7 @@ export default function Populares(props) {
           style={{
             backgroundImage: `url(${imgBgBaseUrl}${serie.backdrop_path})`,
           }}
-        >
-        </div>
+        ></div>
         <button className="btn-back" onClick={props.history.goBack}>
           <span className="material-icons">navigate_before</span>
           voltar
@@ -54,6 +56,12 @@ export default function Populares(props) {
           <p>{serie.overview}</p>
         </div>
       </div>
+      <section className="temporadas">
+        <h2>Temporadas</h2>
+        {temporadas.map((temporada) => (
+          <CardTemporada temporada={temporada}/>
+        ))}
+      </section>
     </Fragment>
   );
 }
